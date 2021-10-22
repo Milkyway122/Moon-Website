@@ -93,7 +93,7 @@ header ul li a.active
 
 .nav
 {
-    position: relative;
+    position: absolute;
     cursor: pointer;
     margin-left: 176vh;
     top: 3.4vh;
