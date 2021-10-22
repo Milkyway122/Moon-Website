@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?=family=Popins:300,400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+    animation-duration: 2.3s;
+    animation-fill-mode: both;
+
+}
+@keyframes appear
+{
+    from {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(#3b1044, #7597de);
+    overflow-x: hidden;
+    overflow: hidden;
+    animation-name: appear;
+    animation-duration: 3.1s;
+}
+
+header .logo{
+color: #fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 1.5em;
+text-transform: uppercase;
+letter-spacing: 2px;
+position: absolute;
+top: 2vh;
+left: 2vh;
+}
+
+.menu
+{
+    margin-left: 177vh;
+    cursor: pointer;
+    border-radius: 30px;
+    position: absolute;
+    top: 3.3vh;
+    
+    
+
+}
+
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 137vh;
+    position: absolute;
+    top: 4vh;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    
+    
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+header ul li a:hover,
+header ul li a.active
+{
+    padding: 6px 15px;
+    background: #fff;
+    color: #3b1044;
+    border-radius: 20px;
+    font-size: 16px;
+    
+    
+}
+
+
+
+

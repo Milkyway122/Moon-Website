@@ -6,12 +6,14 @@
     box-sizing: border-box;
     font-family: 'Popins', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 body{
     min-height: 100vh;
     background: linear-gradient(#3b1044, #7597de);
     overflow-x: hidden;
+    
 }
 header{
     position: absolute;
