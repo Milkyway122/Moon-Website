@@ -12,6 +12,7 @@
 body{
     min-height: 100vh;
     background: linear-gradient(#3b1044, #7597de);
+    
     overflow-x: hidden;
     overflow: hidden;
     animation-name: appear;
@@ -93,10 +94,35 @@ header ul li a.active
 
 .nav
 {
-    position: absolute;
+    position: relative;
     cursor: pointer;
     margin-left: 176vh;
     top: 3.4vh;
     margin-right: 10px;
 }
+
+.navpng
+{
+    width: 100%;
+}
+
+.navpn{
+    width: 100vh;
+    opacity: 0.01;
+
+}
+
+.navpngg
+{
+    margin-left: 75vh;
+    position: absolute;
+    top: -2vh;
+    opacity: 0.01;
+    z-index: -10;
+    
+}
+
+
+
+
 

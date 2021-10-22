@@ -92,6 +92,27 @@ header ul li a.active
     
 }
 
+.navpng
+{
+    width: 100%;
+}
+
+.navpn{
+    width: 100vh;
+    opacity: 0.01;
+
+}
+
+.navpngg
+{
+    margin-left: 75vh;
+    position: absolute;
+    top: -2vh;
+    opacity: 0.01;
+    z-index: -10;
+    
+}
+
 
 
 
