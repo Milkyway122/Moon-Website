@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html>
-    
-        <head>
-            <title>Moon Light - About</title>
-            <link rel="stylesheet" type="text/css" href="About.css">
-            <link rel="stylesheet" href="css/fontello.css" type="text/css">
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-           <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital@1&family=Lato:wght@100&display=swap" rel="stylesheet">
-        </head>
+    <head>
+        <title>Szkoła podstawowa nr 2 w kamesznicy</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
 
-        <body>
-
-            <nav class="navpng">
-                <img src="praca22.png" class="navpn">
-                
-        
-            </nav>
-          
-            <nav class="navpng">
-                  <img src="praca22.png" class="navpngg">
-            </nav>
             
-            <header>
-        
-            <header>
-                <a href="#" class="logo">Logo</a>
+            <img class="logo" src="szkolapodstawowakolko.png">
+            <h1 class="napismain">
+                Szkoła podstawowa nr 2 w Kamesznicy
+            </h1>
+            
+            
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Start</a>
+                </li>
+                <li>
+                    <a href="About.html">O Szkole</a>
+                </li>
+                <li>
+                    <a href="Work.html">Z życia szkoły</a>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakt</a>
+                </li>
+            </ul>
 
-                <ul>
-                    <li>
-                        <a href="index.html" >Home</a>
-                    </li>
-                    <li>
-                        <a href="About.html" class="active">About</a>
-                    </li>
-                    <li>
-                        <a href="Work.html">Work</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+        </header>
 
-                </ul>
-            </header>
-               
+        <section>
+            
+            <img class="szkola" src="kamesznicaszkola.png">
+            
            
-              <nav class="nav">
-                
-                    <span class="menu">
-                       <i class="demo-icon icon-menu"></i>
-                    <span>
-               
-              <nav>
-                  
-                
-                
+            <a href="#sec" id="btn">  ⇓  </a>
+            
+
+        </section>
+
+        <div>
+            
+
+            
+        </div>
+
+        <div class="sec" id="sec">
+            
+            <h3>
+                Ogłoszenie
+           </h3>
+
+           <img class="tabelka" src="tabelka.png">
+            <img class="pasek" src="pasek.png">
+
+        
+           <p  class="ogloszenie1">
+
+            
+           Dyrektor Szkoły Podstawowej nr 2 w Kamesznicy informuje, że od 22 lutego 2021 r. do 5 marca 2021 roku  można składać wnioski o przyjęcie dziecka do przedszkola. Wnioski można odebrać w sekretariacie szkoły.  
+
+           </p>
+           <p class="napis2">
+            
+         <br><br>
+            
+            Obowiązkowym rocznym przygotowaniem  przedszkolnym objęte muszą być dzieci z rocznika 2015.
+                    <br><br>
+            <a href="#f" class="link">Do pobrania wniosek (docx).</a>
+                 <br><br>
+            <a href="#f" class="link"> Do pobrania wniosek (pdf).</a>
+            
+            
+        </p>
+            
+            
+
+            
+           
+        </div>
 
 
-        </body>
-    
+        
+        <script>
+             let stars = document.getElementById('stars');
+             let moon = document.getElementById('moon');
+             let mountains_behind = document.getElementById('mountains_behind');
+             let text = document.getElementById('text');
+             let btn = document.getElementById('btn');
+             let mountains_front = document.getElementById('mountains_front');
+
+             window.addEventListener('scroll', function(){
+                 let value = window.scrollY;
+                 stars.style.left = value * 0.25 + 'px';
+                 moon.style.top = value * 1.05 + 'px';
+                 mountains_behind.style.top = value * 0.5 + 'px';
+                 mountains_front.style.top = value * 0 + 'px';
+                 text.style.marginRight = value * 4 + 'px';
+                 text.style.marginTop = value * 1.5 + 'px';
+                 btn.style.marginTop = value * 1.5 + 'px';
+                 
+                 
+             })
+     </script>
+
+    </body>
+
 </html>

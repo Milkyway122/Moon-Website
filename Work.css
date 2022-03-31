@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?=family=Popins:300,400,500,600,700,800&display=swap');
-
-
 *
 {
     margin: 0;
@@ -8,45 +6,20 @@
     box-sizing: border-box;
     font-family: 'Popins', sans-serif;
     scroll-behavior: smooth;
+    
 }
+
 body{
     min-height: 100vh;
     background: linear-gradient(#3b1044, #7597de);
-    
     overflow-x: hidden;
-    overflow: hidden;
-    animation-name: appear;
-    animation-duration: 3.2s;
+    
 }
-
-@keyframes appear
-{
-    from{
-         opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-    }
-}
-
-header .logo
-{
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: absolute;
-    right: 0;
-    left: 5vh;
-}
-
 header{
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     padding: 30px 100px;
     display: flex;
@@ -55,74 +28,188 @@ header{
     z-index: 10000;
 }
 
-header ul
+header .logo
 {
+    color: #fff;
+    width: 24%;
+    position: relative;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    right: 18vh;
+    bottom: 7vh;
+}
+
+header ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 70%;
-    position: absolute;
-    top: 4vh;
-    left: 2vh;
-    
-
+    margin-right: 55px;
+    position: relative;
+    bottom: 6vh;
 }
 
 header ul li{
-    list-style-type: none;
-    text-decoration: none;
-    margin-left: 15px;
-    
-
-    
+    list-style: none;
+    margin-left: 20px;
 }
 
 header ul li a{
-    color: #fff;
     text-decoration: none;
     padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
 }
 
 header ul li a:hover,
 header ul li a.active
-{  
- padding: 6px 15px;
-    border-radius: 20px;
+{
     background: #fff;
-    color: #3b1044;
+    color: #2b1005;
 }
 
-.nav
+section
 {
     position: relative;
-    cursor: pointer;
-    margin-left: 176vh;
-    top: 3.4vh;
-    margin-right: 10px;
-}
-
-.navpng
-{
     width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
-
-.navpn{
-    width: 100vh;
-    opacity: 0.01;
-
-}
-
-.navpngg
+section::before
 {
-    margin-left: 75vh;
+    content: '';
     position: absolute;
-    top: -2vh;
-    opacity: 0.01;
-    z-index: -10;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#070008,transparent);
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+
+section img#mountains_front
+{
+    z-index: 10;
+}
+
+#text
+{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 6.5vw;
+    z-index: 9;
+    right: -350px;
+
+
+
+}
+
+#btn
+{
+   text-decoration: none;
+   display: inline-block ;
+   padding: 15px 25px;
+   border-radius: 90px;
+   background: #000;
+   color: #fff;
+   font-size: 1.5em; 
+   z-index: 9;
+   transform: translateY(150px);
+   position: relative;
+   left: 80vh;
+   top: 20vh;
+}
+
+.sec 
+{
+    position: relative;
+    padding: 100px;
+    background: #070008;
+   
+}
+
+.sec h3{
+    font-size: 2.9em;
+    margin-bottom: 10px;
+    color: rgb(219, 235, 4);
+    margin-left: 67vh;
+    font-family: cursive;
+    position: relative;
     
 }
 
+.sec p{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.tabelka
+{
+   position: relative;
+   height: 20vh;
+   width: 200%;
+   right: 90vh;
+   bottom: 124vh;
+}
+
+.pasek
+{
+    position: relative;
+    height: 0.5vh;
+    bottom: 125.6vh;
+    width: 200%;
+    right: 90vh;
+}
 
 
+.napismain
+{
+    color: rgb(255, 255, 253);
+    position: relative;
+    bottom: 6vh;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform:inherit;
+    right: 6vh;
+    letter-spacing: 2px;
+    font-style:unset;
+    font-family:cursive;
+    
+}
 
+.ogloszenie1
+{
+    font-weight: 700;
+    position: relative;
+    bottom: 14vh;
+}
 
+.link
+{
+    color: #fff;
+}
+
+.napis2
+{
+    position: relative;
+    bottom: 14vh;
+}
