@@ -1,54 +1,382 @@
-body{
-            margin: 0;
-           min-height: 100vh;
-           background: linear-gradient(#3b1044, #7597de);
-           min-height: 100s;
-           scroll-behavior: smooth;
-           font-family: 'Popins', sans-serif;
-           overflow:hidden;
+@import url('https://fonts.googleapis.com/css?=family=Popins:300,400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
 
+body{
+    min-height: 100vh;
+    background: linear-gradient(#3b1044, #7597de);
+    overflow-x: hidden;
+    
+}
+
+ @media screen and (max-width:1024px){
+     header
+     {
+         width: 100%;
+
+     }
+
+     section
+     {
+         width: 100%;
+     }
+ }
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    z-index: 10000;
 }
 
 header .logo
 {
     color: #fff;
-    font-weight: 700;
+    width: 23.4%;
+    position: relative;
     text-decoration: none;
-    font-size: 0.em;
+    font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    position: absolute;
-    right: 0;
-    left: 5vh;
+    right: 18vh;
+    bottom: 7vh;
 }
 
-
-header ul
-{
-    color: #fff;
-    list-style-type: none;
+header ul{
     display: flex;
-    margin-left: 66%;
-    top: 2px;
-    
-    
-
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    position: relative;
+    bottom: 6vh;
 }
-
-
 
 header ul li{
-
-    margin-left: 3vh;
-    font-size: 1.2em;
-    position: relative;
-    top: 20px;
+    list-style: none;
+    margin-left: 20px;
 }
 
-
-header ul li a
-{
+header ul li a{
     text-decoration: none;
+    padding: 6px 15px;
     color: #fff;
-  
+    border-radius: 20px;
 }
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1005;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#070008,transparent);
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+
+section img#mountains_front
+{
+    z-index: 10;
+}
+
+#text
+{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 6.5vw;
+    z-index: 9;
+    right: -350px;
+
+
+
+}
+
+#btn
+{
+   text-decoration: none;
+   display: inline-block ;
+   padding: 15px 25px;
+   border-radius: 90px;
+   background: #000;
+   color: #fff;
+   font-size: 1.5em; 
+   z-index: 9;
+   transform: translateY(150px);
+   position: relative;
+   left: 80vh;
+   top: 20vh;
+}
+
+#btn2
+{
+   text-decoration: none;
+   display: inline-block ;
+   padding: 15px 25px;
+   border-radius: 90px;
+   background: rgb(53, 1, 1);
+   color: rgb(250, 245, 245);
+   font-size: 1.5em; 
+   z-index: 9;
+   transform: translateY(150px);
+   position: relative;
+   left: 163vh;
+   z-index: 1;
+}
+
+.sec 
+{
+    position: relative;
+    padding: 100px;
+    background: #070008;
+   
+}
+
+.sec h3{
+    font-size: 2.9em;
+    margin-bottom: 10px;
+    color: rgb(219, 235, 4);
+    margin-left: 67vh;
+    font-family: cursive;
+    position: relative;
+    
+}
+
+.sec p{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.tabelka
+{
+   position: relative;
+   height: 20vh;
+   width: 200%;
+   right: 90vh;
+   bottom: 124vh;
+}
+
+.pasek
+{
+    position: relative;
+    height: 0.5vh;
+    bottom: 125.6vh;
+    width: 200%;
+    right: 90vh;
+}
+
+
+.napismain
+{
+    color: rgb(255, 255, 253);
+    position: relative;
+    bottom: 6.5vh;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform:inherit;
+    right: 6vh;
+    letter-spacing: 2px;
+    font-style:unset;
+    font-family:cursive;
+    
+}
+
+.ogloszenie1
+{
+    font-weight: 700;
+    position: relative;
+    bottom: 14vh;
+}
+
+.link
+{
+    color: #fff;
+}
+
+.napis2
+{
+    position: relative;
+    bottom: 14vh;
+}
+
+.calculator{ 
+    height: 60vh;
+    min-width: 370px;
+    max-width: 370px;
+    margin-left: 70vh;
+    margin-top: 27vh;
+    
+}
+
+
+.display {
+    width: 100%;
+    min-height: 20%;
+    max-height: min-content;
+    background-color:rgba(29, 27, 27, 0.151);
+    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: white;
+    word-break: break-all;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 5px;
+    font-weight: bold;
+    
+}
+
+.currentNumber {
+    font-size: 35px;
+
+}
+
+
+.previousNumber {
+    color: rgb(182,182,182);
+    font-size: 20px;
+    
+}
+
+.mathSign {
+    font-size: 22px;
+    
+
+}
+
+
+.panel {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+    
+}
+
+.panel button {
+    font-size: 25px;
+    background-color :rgba(0,0,0,0.466);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all .2s ease-in-out;
+    
+}
+
+
+button:hover {
+    background-color:rgba(0,0,0,0.546);
+}
+
+.equals {
+    grid-row: -1/-3;
+    grid-column: -2/-1;
+    
+}
+
+
+.calculator-history {
+    height: 60vh;
+    margin: 20px;
+    width: 150px;
+    background-color: rgba(20,27,27,0.151);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 115vh;
+    position: relative;
+    bottom: 61.2vh;
+}
+
+.history {
+    list-style: none;
+}
+
+.history-title {
+    padding-bottom: 10px;
+}
+
+
+.history-btn {
+    color: white;
+    background: rgba(29,27,27,0.603);
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+    outline: none;
+    margin: 5px auto;
+}
+.history-btn.active {
+    display: block;
+}
+
+.history-item {
+    margin: 8px 0px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(29,27,27, 0.233);
+    padding-bottom: 5px;
+}
+
+
+.napiskal h1
+{
+    text-align: center;
+    position: relative;
+    color: yellow;
+    right: 7vh;
+    font-size: 4em;
+    top: 8vh;
+    font-family:cursive ;
+}
+

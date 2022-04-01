@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="witdh=device-width, initial-scale=1.0">
         <title>Szkoła podstawowa nr 2 w kamesznicy</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+
+        
+
+    
         <header>
 
             
@@ -16,17 +21,25 @@
             
             <ul>
                 <li>
-                    <a href="index.html" class="active">Start</a>
+                    <a href="index.html" >Start</a>
                 </li>
                 <li>
-                    <a href="About.html">O Szkole</a>
+                    <a href="About.html" class="active">O Szkole</a>
                 </li>
                 <li>
                     <a href="Work.html">Z życia szkoły</a>
                 </li>
                 <li>
-                    <a href="contact.html">Kontakt</a>
+                    <a href="contact.html" >Kontakt</a>
                 </li>
+                <li>
+                    <a href="Uczniowie.html">Uczniowie</a>
+                </li>
+
+               
+           
+                    
+                
             </ul>
 
         </header>
@@ -37,6 +50,8 @@
             
            
             <a href="#sec" id="btn">  ⇓  </a>
+
+            
             
 
         </section>
@@ -48,6 +63,8 @@
         </div>
 
         <div class="sec" id="sec">
+
+            
             
             <h3>
                 Ogłoszenie
@@ -55,6 +72,11 @@
 
            <img class="tabelka" src="tabelka.png">
             <img class="pasek" src="pasek.png">
+
+
+            
+
+            
 
         
            <p  class="ogloszenie1">
@@ -82,25 +104,78 @@
            
         </div>
 
+        <div class="napiskal">
+            <h1>
+                Kalkulator
+            </h1>
+        </div>
+
+        <div class="sec2" id="sec">
+
+        </div>
+
+        
+ 
+        <div class="calculator">
+            <div class="display">
+                <div class="previousNumber">
+                    <p></p>
+                    <span class="mathSign"></span>
+                </div>
+                <p class="currentNumber"></p>
+            </div>
+       
+        <div class="panel">
+            <button class="clear">C</button>
+            <button class="operator">2^</button>
+            <button class="operator">:</button>
+            <button class="operator">x</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">-</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">+</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="equals">=</button>
+            <button class="number">0</button>
+            <button class="number">00</button>
+            <button class="number">.</button>
+        </div>
+    </div>
+        <div data-simplebar class="calculator-history">
+            <p class="history-title">Historia <br> Liczenia <button class="history-btn">Wyczyść historię</button> </p>
+            <hr>
+    
+            <ul class="history">
+                
+            </ul>
+        </div>
+    
+    
+    
+        <script src="main2.js"></script>
+    
+        <script src="main.js"></script>
+
+        
+
 
         
         <script>
-             let stars = document.getElementById('stars');
-             let moon = document.getElementById('moon');
-             let mountains_behind = document.getElementById('mountains_behind');
-             let text = document.getElementById('text');
+            
              let btn = document.getElementById('btn');
-             let mountains_front = document.getElementById('mountains_front');
+             let btn2 = document.getElementById('btn2');
+            
 
              window.addEventListener('scroll', function(){
-                 let value = window.scrollY;
-                 stars.style.left = value * 0.25 + 'px';
-                 moon.style.top = value * 1.05 + 'px';
-                 mountains_behind.style.top = value * 0.5 + 'px';
-                 mountains_front.style.top = value * 0 + 'px';
-                 text.style.marginRight = value * 4 + 'px';
-                 text.style.marginTop = value * 1.5 + 'px';
+                
                  btn.style.marginTop = value * 1.5 + 'px';
+                 btn2.style.marginTop = value * 6.5 + 'px';
                  
                  
              })

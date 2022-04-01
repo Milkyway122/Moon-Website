@@ -1,27 +1,186 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Moon Light - Milkyway Website</title>
-        <link rel="stylesheet" type="text/css" href="contact.css">
+        <meta name="viewport" content="witdh=device-width, initial-scale=1.0">
+        <title>Szkoła podstawowa nr 2 w kamesznicy</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-
     <body>
+
+        
+
+    
         <header>
+
+            
+            <img class="logo" src="szkolapodstawowakolko.png">
+            <h1 class="napismain">
+                Szkoła podstawowa nr 2 w Kamesznicy
+            </h1>
+            
+            
             <ul>
-                <a  href="#" class="logo">Logo</a>
                 <li>
-                    <a href="#" class="active">Home</a>
+                    <a href="index.html" >Start</a>
                 </li>
                 <li>
-                    <a href="About.html">About</a>
+                    <a href="About.html">O Szkole</a>
                 </li>
                 <li>
-                    <a href="Work.html">Work</a>
+                    <a href="Work.html">Z życia szkoły</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="active">Kontakt</a>
                 </li>
+                <li>
+                    <a href="Uczniowie.html">Uczniowie</a>
+                </li>
+
+               
+           
+                    
+                
             </ul>
+
         </header>
+
+        <section>
+            
+            <img class="szkola" src="kamesznicaszkola.png">
+            
+           
+            <a href="#sec" id="btn">  ⇓  </a>
+
+            
+            
+
+        </section>
+
+        <div>
+            
+
+            
+        </div>
+
+        <div class="sec" id="sec">
+
+            
+            
+            <h3>
+                Ogłoszenie
+           </h3>
+
+           <img class="tabelka" src="tabelka.png">
+            <img class="pasek" src="pasek.png">
+
+
+            
+
+            
+
+        
+           <p  class="ogloszenie1">
+
+            
+           Dyrektor Szkoły Podstawowej nr 2 w Kamesznicy informuje, że od 22 lutego 2021 r. do 5 marca 2021 roku  można składać wnioski o przyjęcie dziecka do przedszkola. Wnioski można odebrać w sekretariacie szkoły.  
+
+           </p>
+           <p class="napis2">
+            
+         <br><br>
+            
+            Obowiązkowym rocznym przygotowaniem  przedszkolnym objęte muszą być dzieci z rocznika 2015.
+                    <br><br>
+            <a href="#f" class="link">Do pobrania wniosek (docx).</a>
+                 <br><br>
+            <a href="#f" class="link"> Do pobrania wniosek (pdf).</a>
+            
+            
+        </p>
+            
+            
+
+            
+           
+        </div>
+
+        <div class="napiskal">
+            <h1>
+                Kalkulator
+            </h1>
+        </div>
+
+        <div class="sec2" id="sec">
+
+        </div>
+
+        
+ 
+        <div class="calculator">
+            <div class="display">
+                <div class="previousNumber">
+                    <p></p>
+                    <span class="mathSign"></span>
+                </div>
+                <p class="currentNumber"></p>
+            </div>
+       
+        <div class="panel">
+            <button class="clear">C</button>
+            <button class="operator">2^</button>
+            <button class="operator">:</button>
+            <button class="operator">x</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">-</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">+</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="equals">=</button>
+            <button class="number">0</button>
+            <button class="number">00</button>
+            <button class="number">.</button>
+        </div>
+    </div>
+        <div data-simplebar class="calculator-history">
+            <p class="history-title">Historia <br> Liczenia <button class="history-btn">Wyczyść historię</button> </p>
+            <hr>
+    
+            <ul class="history">
+                
+            </ul>
+        </div>
+    
+    
+    
+        <script src="main2.js"></script>
+    
+        <script src="main.js"></script>
+
+        
+
+
+        
+        <script>
+            
+             let btn = document.getElementById('btn');
+             let btn2 = document.getElementById('btn2');
+            
+
+             window.addEventListener('scroll', function(){
+                
+                 btn.style.marginTop = value * 1.5 + 'px';
+                 btn2.style.marginTop = value * 6.5 + 'px';
+                 
+                 
+             })
+     </script>
+
     </body>
+
 </html>

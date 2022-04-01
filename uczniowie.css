@@ -11,7 +11,7 @@
 
 body{
     min-height: 100vh;
-    background: linear-gradient(#3b1044, #7597de);
+    background: linear-gradient(#F0F8FF, #8A2BE2);
     overflow-x: hidden;
     
 }
@@ -28,6 +28,8 @@ body{
          width: 100%;
      }
  }
+
+ 
 header{
     position: absolute;
     top: 0;
@@ -197,14 +199,14 @@ section img#mountains_front
    height: 20vh;
    width: 200%;
    right: 90vh;
-   bottom: 124vh;
+   bottom: 116vh;
 }
 
 .pasek
 {
     position: relative;
     height: 0.5vh;
-    bottom: 125.6vh;
+    bottom: 117.7vh;
     width: 200%;
     right: 90vh;
 }
@@ -380,7 +382,176 @@ button:hover {
     font-family:cursive ;
 }
 
-.container
+.boiskomain
 {
-    width: 400%;
+    margin: 0;
+   
 }
+
+.klasa3
+{
+    width: 20%;
+    height: 40;
+    position: relative;
+    bottom: 115vh;
+    left: 75vh;
+    border: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 10px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    
+}
+
+.klasa3napis
+{
+    margin: 0;
+    position: relative;
+    bottom: 133vh;
+    left: 62vh;
+    color: #fff;
+    border: 10px;
+    font-family: cursive;
+}
+
+.zdjecia
+{
+  
+    display: inline-block
+}
+
+.klasa5
+{
+    width: 20%;
+    height: 16vh;
+    position: relative;
+    bottom: 131vh;
+    left: 135vh;
+    border: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 10px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    
+}
+
+.klasa5napis
+{
+    margin: 0;
+    position: relative;
+    bottom: 149vh;
+    left: 120vh;
+    color: #fff;
+    border: 10px;
+    font-family: cursive;
+}
+
+
+.klasa1
+{
+    width: 20%;
+    height: 15vh;
+    position: relative;
+    bottom: 148vh;
+    left: 20vh;
+    border: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 10px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.klasa1napis
+{
+    margin: 0;
+    position: relative;
+    bottom: 165vh;
+    left: 7vh;
+    color: #fff;
+    border: 10px;
+    font-family: cursive; 
+}
+
+.klasa2
+{
+    width: 20%;
+    height: 15vh;
+    position: relative;
+    bottom: 163vh;
+    left: 47vh;
+    border: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 10px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.klasa2napis
+{
+    margin: 0;
+    position: relative;
+    bottom: 180vh;
+    left: 33vh;
+    color: #fff;
+    border: 10px;
+    font-family: cursive;  
+}
+
+.klasa4
+{
+    width: 20%;
+    height: 16vh;
+    position: relative;
+    bottom: 178vh;
+    left: 105vh;
+    border: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 10px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    
+
+}
+
+.klasa4napis
+{
+    margin: 0;
+    position: relative;
+    bottom: 196.5vh;
+    left: 92vh;
+    color: #fff;
+    border: 10px;
+    font-family: cursive;
+}
+
+
+.klasa7
+{
+    width: 20%;
+    height: 16vh;
+    position: relative;
+    bottom: 172vh;
+    left: 21vh;
+    border: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 10px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.klasa7napis
+{
+    margin: 0;
+    position: relative;
+    bottom: 190vh;
+    left: 8vh;
+    color: #fff;
+    border: 10px;
+    font-family: cursive;
+}
+
+.klasa8
+{
+    width: 20%;
+    height: 10vh;
+    position: relative;
+    bottom: 184vh;
+    left: 52vh;
+    border: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 10px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.klasa8napis
+{
+    margin: 0;
+    position: relative;
+    bottom: 196vh;
+    left: 37vh;
+    color: #fff;
+    border: 10px;
+    font-family: cursive;
+}
+
+
