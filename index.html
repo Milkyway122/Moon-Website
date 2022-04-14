@@ -9,177 +9,87 @@
     <body>
 
         
-       
-    
+        
         <header>
 
-            
-            <img class="logo" src="szkolapodstawowakolko.png">
-            <h1 class="napismain">
-                Szkoła podstawowa nr 2 w Kamesznicy
-            </h1>
-            
-           <ul>
-            <li>
-                <a href="index.html" class="active">Start</a>
-            </li>
-            <li>
-                <a href="About.html">O Szkole</a>
-            </li>
-            <li>
-                <a href="Work.html">Z życia szkoły</a>
-            </li>
-            <li>
-                <a href="contact.html">Kontakt</a>
-            </li>
-            <li>
-                <a href="Uczniowie.html">Uczniowie</a>
-            </li>
-
-           
-       
-                
-            
-        </ul>
-
           
-        </header>
 
-        <section>
-            
-            <img class="szkola" src="kamesznicaszkola.png">
-            
+            <div class="navigation">
+
            
-            <a href="#sec" id="btn">  ⇓  </a>
-
-            
-            
-
-        </section>
-
-        <div>
-            
-
-            
-        </div>
-
-        <div class="sec" id="sec">
-
-            
-            
-            <h3>
-                Ogłoszenie
-           </h3>
-
-           <img class="tabelka" src="tabelka.png">
-            <img class="pasek" src="pasek.png">
-
-
-            
-
-            
-
-        
-           <p  class="ogloszenie1">
-
-            
-           Dyrektor Szkoły Podstawowej nr 2 w Kamesznicy informuje, że od 22 lutego 2021 r. do 5 marca 2021 roku  można składać wnioski o przyjęcie dziecka do przedszkola. Wnioski można odebrać w sekretariacie szkoły.  
-
-           </p>
-           <p class="napis2">
-            
-         <br><br>
-            
-            Obowiązkowym rocznym przygotowaniem  przedszkolnym objęte muszą być dzieci z rocznika 2015.
-                    <br><br>
-            <a href="#f" class="link">Do pobrania wniosek (docx).</a>
-                 <br><br>
-            <a href="#f" class="link"> Do pobrania wniosek (pdf).</a>
-            
-            
-        </p>
-            
-            
-
-            
-           
-        </div>
-
-        <div class="napiskal">
-            <h1>
-                Kalkulator
-            </h1>
-        </div>
-
-        <div class="sec2" id="sec">
-
-        </div>
-
-        
- 
-        <div class="calculator">
-            <div class="display">
-                <div class="previousNumber">
-                    <p></p>
-                    <span class="mathSign"></span>
-                </div>
-                <p class="currentNumber"></p>
+                
+                <ul>
+                    <li class="list">
+                        <a href="index.html">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="text">Start</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                     <a href="Uczniowie.html">
+                         <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                         <span class="text">Uczniowie</span>
+                     </a>
+                 </li>
+                 <li class="list ">
+                     <a href="Work.html">
+                         <span class="icon"><ion-icon name="logo-stackoverflow"></ion-icon></span>
+                         <span class="text">O szkole</span>
+                     </a>
+                 </li>
+                 <li class="list">
+                     <a href="#">
+                         <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                         <span class="text">Osiągnięcia</span>
+                     </a>
+                 </li>
+                 <li class="list">
+                     <a href="#">
+                         <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                         <span class="text">Kontakt</span>
+                     </a>
+                 </li>
+     
+                </ul>
+                
             </div>
-       
-        <div class="panel">
-            <button class="clear">C</button>
-            <button class="operator">2^</button>
-            <button class="operator">:</button>
-            <button class="operator">x</button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="operator">-</button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="operator">+</button>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="equals">=</button>
-            <button class="number">0</button>
-            <button class="number">00</button>
-            <button class="number">.</button>
-        </div>
-    </div>
-        <div data-simplebar class="calculator-history">
-            <p class="history-title">Historia <br> Liczenia <button class="history-btn">Wyczyść historię</button> </p>
-            <hr>
+        </header>
+              
+           
+ 
+            
+         <section>
+             <img src="boisko.jpg" class="boisko">
+             
+         </section>
+
+      
+            
     
-            <ul class="history">
+    
+           
+            <script>
                 
-            </ul>
-        </div>
+                 let btn = document.getElementById('btn');
+                 let btn2 = document.getElementById('btn2');
+                
     
-    
-    
-        <script src="main2.js"></script>
-    
-        <script src="main.js"></script>
+                 window.addEventListener('scroll', function(){
+                    
+                     btn.style.marginTop = value * 1.5 + 'px';
+                     btn2.style.marginTop = value * 6.5 + 'px';
+                     
+                     
+                 })
+         </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
         
-
+    
        
-        <script>
-            
-             let btn = document.getElementById('btn');
-             let btn2 = document.getElementById('btn2');
-            
-
-             window.addEventListener('scroll', function(){
-                
-                 btn.style.marginTop = value * 1.5 + 'px';
-                 btn2.style.marginTop = value * 6.5 + 'px';
-                 
-                 
-             })
-     </script>
 
     </body>
 

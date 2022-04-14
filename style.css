@@ -6,80 +6,142 @@
     box-sizing: border-box;
     font-family: 'Popins', sans-serif;
     scroll-behavior: smooth;
+    overflow: hidden;
+    
     
 }
 
-body{
+body
+{
     min-height: 100vh;
-    background: linear-gradient(#3b1044, #7597de);
-    overflow-x: hidden;
-    
+    background: #222327;
 }
 
- @media screen and (max-width:1024px){
-     header
-     {
-         width: 100%;
-
-     }
-
-     section
-     {
-         width: 100%;
-     }
- }
-header{
+header
+{
     position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    padding: 30px 100px;
+    top: -2%;
+    right: -2.6%;
+    width: 105%;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
     z-index: 10000;
 }
 
-header .logo
-{
-    color: #fff;
-    width: 23.4%;
+.kolko{
     position: relative;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    right: 18vh;
-    bottom: 7vh;
+    justify-content: center;
+    width: 20%;
+    height: 12vh;
+    display: flex;
+    
 }
 
-header ul{
+.navigation
+{ 
+   
+    position: relative;
+    width: 102.4%;
+    height: -10vh;
+    background: #F5FFFA;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 100000px, rgb(51, 51, 51) 0px 0px 0px 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
-    position: relative;
-    bottom: 6vh;
+    border-radius: 2px;
+    opacity: 1;
+    
+    
 }
 
-header ul li{
-    list-style: none;
-    margin-left: 20px;
-}
-
-header ul li a{
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #fff;
-    border-radius: 20px;
-}
-
-header ul li a:hover,
-header ul li a.active
+.s1
 {
-    background: #fff;
-    color: #2b1005;
+    position: relative;
+    width: 30%;
+    height: 40vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navigation ul
+{
+    display: flex;
+    width: 350px;
+    opacity: 1;
+}
+
+.navigation ul li
+{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.navigation ul li a
+{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   text-align: center;
+   font-weight: 500;
+   opacity: 1;
+}
+
+
+.navigation ul li a .icon
+{
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: #222327;
+  opacity: 1;
+}
+.navigation ul li:hover a .icon
+{
+
+    transform: translateY(-20px);
+}
+
+.navigation ul li a .text
+{
+    position: absolute;
+    color: #222327;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li:hover a .text
+{
+    opacity: 1;
+    transform: translateY(10px);
+    
+} 
+
+
+
+.boisko
+{
+    width: 100%;
+    opacity: 111;
 }
 
 section
@@ -87,300 +149,35 @@ section
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 100px;
-    display: flex;
     justify-content: center;
+    display: flex;
     align-items: center;
-    overflow: hidden;
-}
-section::before
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,#070008,transparent);
-    z-index: 1000;
+
 }
 
-section img{
+section img
+{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
-    pointer-events: none;
-}
-section img#moon
-{
-    mix-blend-mode: screen;
-}
-
-section img#mountains_front
-{
-    z-index: 10;
-}
-
-#text
-{
-    position: absolute;
-    color: #fff;
-    white-space: nowrap;
-    font-size: 6.5vw;
-    z-index: 9;
-    right: -350px;
-
-
-
 }
 
 #btn
 {
-   text-decoration: none;
-   display: inline-block ;
-   padding: 15px 25px;
-   border-radius: 90px;
-   background: #000;
-   color: #fff;
-   font-size: 1.5em; 
-   z-index: 9;
-   transform: translateY(150px);
-   position: relative;
-   left: 80vh;
-   top: 20vh;
-}
-
-#btn2
-{
-   text-decoration: none;
-   display: inline-block ;
-   padding: 15px 25px;
-   border-radius: 90px;
-   background: rgb(53, 1, 1);
-   color: rgb(250, 245, 245);
-   font-size: 1.5em; 
-   z-index: 9;
-   transform: translateY(150px);
-   position: relative;
-   left: 163vh;
-   z-index: 1;
-}
-
-.sec 
-{
-    position: relative;
-    padding: 100px;
-    background: #070008;
-   
-}
-
-.sec h3{
-    font-size: 2.9em;
-    margin-bottom: 10px;
-    color: rgb(219, 235, 4);
-    margin-left: 67vh;
-    font-family: cursive;
-    position: relative;
-    
-}
-
-.sec p{
-    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #000;
     color: #fff;
-}
-
-.tabelka
-{
-   position: relative;
-   height: 20vh;
-   width: 200%;
-   right: 90vh;
-   bottom: 124vh;
-}
-
-.pasek
-{
-    position: relative;
-    height: 0.5vh;
-    bottom: 125.6vh;
-    width: 200%;
-    right: 90vh;
-}
-
-
-.napismain
-{
-    color: rgb(255, 255, 253);
-    position: relative;
-    bottom: 6.5vh;
-    font-size: 2em;
-    font-weight: 700;
-    text-transform:inherit;
-    right: 6vh;
-    letter-spacing: 2px;
-    font-style:unset;
-    font-family:cursive;
-    
-}
-
-.ogloszenie1
-{
-    font-weight: 700;
-    position: relative;
-    bottom: 14vh;
-}
-
-.link
-{
-    color: #fff;
-}
-
-.napis2
-{
-    position: relative;
-    bottom: 14vh;
-}
-
-.calculator{ 
-    height: 60vh;
-    min-width: 370px;
-    max-width: 370px;
-    margin-left: 70vh;
-    margin-top: 27vh;
-    
-}
-
-
-.display {
-    width: 100%;
-    min-height: 20%;
-    max-height: min-content;
-    background-color:rgba(29, 27, 27, 0.151);
-    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    color: white;
-    word-break: break-all;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-right: 5px;
-    font-weight: bold;
-    
-}
-
-.currentNumber {
-    font-size: 35px;
+    font-size: 1.5em;
+    justify-content:center ;
+    z-index: 1;
+    position: absolute;
 
 }
 
 
-.previousNumber {
-    color: rgb(182,182,182);
-    font-size: 20px;
-    
-}
-
-.mathSign {
-    font-size: 22px;
-    
-
-}
-
-
-.panel {
-    height: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 2px;
-    
-}
-
-.panel button {
-    font-size: 25px;
-    background-color :rgba(0,0,0,0.466);
-    color: white;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: all .2s ease-in-out;
-    
-}
-
-
-button:hover {
-    background-color:rgba(0,0,0,0.546);
-}
-
-.equals {
-    grid-row: -1/-3;
-    grid-column: -2/-1;
-    
-}
-
-
-.calculator-history {
-    height: 60vh;
-    margin: 20px;
-    width: 150px;
-    background-color: rgba(20,27,27,0.151);
-    color: white;
-    padding: 5px 10px;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 115vh;
-    position: relative;
-    bottom: 61.2vh;
-}
-
-.history {
-    list-style: none;
-}
-
-.history-title {
-    padding-bottom: 10px;
-}
-
-
-.history-btn {
-    color: white;
-    background: rgba(29,27,27,0.603);
-    border: none;
-    font-size: 15px;
-    padding: 8px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    display: none;
-    outline: none;
-    margin: 5px auto;
-}
-.history-btn.active {
-    display: block;
-}
-
-.history-item {
-    margin: 8px 0px;
-    letter-spacing: 1px;
-    border-bottom: 1px solid rgba(29,27,27, 0.233);
-    padding-bottom: 5px;
-}
-
-
-.napiskal h1
-{
-    text-align: center;
-    position: relative;
-    color: yellow;
-    right: 7vh;
-    font-size: 4em;
-    top: 8vh;
-    font-family:cursive ;
-}
-
-.container
-{
-    width: 400%;
-}

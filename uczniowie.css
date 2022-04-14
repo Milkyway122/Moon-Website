@@ -30,58 +30,16 @@ body{
  }
 
  
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    z-index: 10000;
-}
-
-header .logo
+.navigation
 {
-    color: #fff;
-    width: 23.4%;
     position: relative;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    right: 18vh;
-    bottom: 7vh;
-}
-
-header ul{
+    width: 40%;
+    height: 70%;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
-    position: relative;
-    bottom: 6vh;
-}
-
-header ul li{
-    list-style: none;
-    margin-left: 20px;
-}
-
-header ul li a{
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #fff;
-    border-radius: 20px;
-}
-
-header ul li a:hover,
-header ul li a.active
-{
-    background: #fff;
-    color: #2b1005;
+    border-radius: 10px ;
 }
 
 section
@@ -406,7 +364,7 @@ button:hover {
     position: relative;
     bottom: 133vh;
     left: 62vh;
-    color: #fff;
+    color: rgb(12, 12, 1);
     border: 10px;
     font-family: cursive;
 }
@@ -435,7 +393,7 @@ button:hover {
     position: relative;
     bottom: 149vh;
     left: 120vh;
-    color: #fff;
+    color: rgb(12, 12, 1);
     border: 10px;
     font-family: cursive;
 }
@@ -458,7 +416,7 @@ button:hover {
     position: relative;
     bottom: 165vh;
     left: 7vh;
-    color: #fff;
+    color: rgb(12, 12, 1);
     border: 10px;
     font-family: cursive; 
 }
@@ -480,7 +438,7 @@ button:hover {
     position: relative;
     bottom: 180vh;
     left: 33vh;
-    color: #fff;
+    color: rgb(12, 12, 1);
     border: 10px;
     font-family: cursive;  
 }
@@ -504,7 +462,7 @@ button:hover {
     position: relative;
     bottom: 196.5vh;
     left: 92vh;
-    color: #fff;
+    color: rgb(12, 12, 1);
     border: 10px;
     font-family: cursive;
 }
@@ -527,7 +485,7 @@ button:hover {
     position: relative;
     bottom: 190vh;
     left: 8vh;
-    color: #fff;
+    color: yellow;
     border: 10px;
     font-family: cursive;
 }
@@ -549,7 +507,7 @@ button:hover {
     position: relative;
     bottom: 196vh;
     left: 37vh;
-    color: #fff;
+    color: rgb(255, 255, 5);
     border: 10px;
     font-family: cursive;
 }
