@@ -11,6 +11,70 @@
     
 }
 
+@media only screen and (max-width: 700px) 
+ {
+      header .navigation{
+            
+          display: none;
+          
+      }              
+ }
+
+ @media only screen and (max-width: 2000px) 
+ {
+      header .kompre{
+          display: none;
+      }
+ }
+
+ @media only screen and (max-width: 700px) 
+{
+    header .kompre{
+        position: relative;
+        width: 70%;
+        font-size: 1.5em;
+        background: transparent;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items:baseline;
+        opacity: 1;
+        
+       
+    }
+
+    header .kompre .icon2{
+        position: relative;
+        display: block;
+        line-height: 75px;
+        font-size: 2.1em;
+        text-align: center;
+        transition: 0.4s;
+        color: #fff;
+        opacity: 1;
+        
+       
+    }
+}
+
+
+  
+
+
+
+ .kompre{
+    position: relative;
+    width: 40%;
+    background: #F5FFFA;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+   
+ }
+
+
 body
 {
     min-height: 100vh;
@@ -20,60 +84,46 @@ body
 header
 {
     position: absolute;
-    top: -2%;
-    right: -2.6%;
-    width: 105%;
-    padding: 10px;
+    top: 2%;
+    right:-2.6%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    
+
 }
 
-.kolko{
-    position: relative;
-    justify-content: center;
-    width: 20%;
-    height: 12vh;
-    display: flex;
-    
-}
 
 .navigation
 { 
    
     position: relative;
-    width: 102.4%;
-    height: -10vh;
+    width: 70%;
+    height: 6vh;
     background: #F5FFFA;
     opacity: 1;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 100000px, rgb(51, 51, 51) 0px 0px 0px 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
+    border-radius: 1000px;
     opacity: 1;
     
     
 }
 
-.s1
-{
-    position: relative;
-    width: 30%;
-    height: 40vh;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
 
 
 
 .navigation ul
 {
     display: flex;
-    width: 350px;
+    width: 100%;
+    justify-content: space-around;
     opacity: 1;
+    
 }
 
 .navigation ul li
@@ -84,7 +134,20 @@ header
     height: 70px;
     z-index: 1;
     opacity: 1;
+    
 }
+
+.navigation .icon2{
+    position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 2.1em;
+  text-align: center;
+  transition: 0.4s;
+  color: #222327;
+  opacity: 1;
+}
+
 
 .navigation ul li a
 {
@@ -95,9 +158,10 @@ header
    flex-direction: column;
    width: 100%;
    text-align: center;
-   font-weight: 500;
+   font-weight: 900;
    opacity: 1;
 }
+
 
 
 .navigation ul li a .icon
@@ -107,14 +171,15 @@ header
   line-height: 75px;
   font-size: 1.5em;
   text-align: center;
-  transition: 0.5s;
+  transition: 0.4s;
   color: #222327;
   opacity: 1;
 }
+
 .navigation ul li:hover a .icon
 {
 
-    transform: translateY(-20px);
+    transform: translateY(-15px);
 }
 
 .navigation ul li a .text
@@ -126,7 +191,7 @@ header
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(15px);
 }
 
 .navigation ul li:hover a .text
@@ -174,7 +239,7 @@ section img
     background: #000;
     color: #fff;
     font-size: 1.5em;
-    justify-content:center ;
+    justify-content:center;
     z-index: 1;
     position: absolute;
 
